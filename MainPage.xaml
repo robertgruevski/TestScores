@@ -39,7 +39,7 @@
                 FontSize="32"
                 Grid.Row="3"
                 Grid.Column="0" />
-        <Label x:Name="lblAverage"
+        <Label x:Name="lblAverageScore"
                FontSize="32"
                Grid.Row="3"
                Grid.Column="1" />
