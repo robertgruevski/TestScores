@@ -12,7 +12,6 @@
         private void OnAddScoreClicked(object sender, EventArgs e)
 		{
 			lblTotalScore.Text = "Total Score";
-
 		}
 
 		private void OnClearClicked(object sender, EventArgs e)

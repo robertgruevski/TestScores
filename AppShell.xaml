@@ -7,7 +7,7 @@
     Title="TestScores">
 
     <ShellContent
-        Title="Home"
+        Title="My Score Calculator"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
