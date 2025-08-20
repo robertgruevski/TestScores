@@ -4,7 +4,7 @@
              x:Class="TestScores.MainPage">
 
     <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto"
-          ColumnDefinitions="Auto, *, Auto"
+          ColumnDefinitions="Auto, 130, Auto"
           RowSpacing="20">
         <Label Text="Enter Score"
                FontSize="32"

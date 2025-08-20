@@ -27,28 +27,26 @@
 				lblTotalScore.Text = $"\t{totalScore}";
 				lblScoreCount.Text = $"\t{testScoreCount}";
 				lblAverageScore.Text = $"\t{averageScore}";
-
-				txtScoreEntry.Text = string.Empty; // Clear the input field
 			}
 			else
 			{
 				// Conversion Failed
 				DisplayAlert("Invalid Input", "Please enter a valid score.", "OK");
 			}
-
+			txtScoreEntry.Text = string.Empty; // Clear the input field
 		}
 
 		private void OnClearClicked(object sender, EventArgs e)
 		{
-			lblTotalScore.Text = "0";
+			lblTotalScore.Text = string.Empty;
+			lblScoreCount.Text = string.Empty;
+			lblAverageScore.Text = string.Empty;
 			totalScore = 0;
 			testScoreCount = 0;
+			averageScore = 0f;
 			txtScoreEntry.Text = string.Empty; // Clear the input field
 		}
 
-		private void OnExitClicked(object sender, EventArgs e)
-		{
-			Application.Current.Quit();
-		}
+		private void OnExitClicked(object sender, EventArgs e) => Application.Current.Quit();
 	}
 }
