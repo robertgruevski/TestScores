@@ -9,16 +9,20 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            count++;
+        private void OnAddScoreClicked(object sender, EventArgs e)
+		{
+			lblTotalScore.Text = "Total Score";
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+		}
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
-    }
+		private void OnClearClicked(object sender, EventArgs e)
+		{
+			lblTotalScore.Text = "0";
+		}
+
+		private void OnExitClicked(object sender, EventArgs e)
+		{
+			Application.Current.Quit();
+		}
+	}
 }
